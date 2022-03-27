@@ -7,7 +7,7 @@ import { getPosts } from "../../actions/posts";
 
 const Home = () => {
   const dispatch = useDispatch();
-  const [currentId, setCurrentId] = useState(null);
+  const [currentId, setCurrentId] = useState(0);
 
   useEffect(() => {
     dispatch(getPosts());
